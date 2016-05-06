@@ -193,7 +193,6 @@
 				TargetAttributes = {
 					FAB9A7201CDB4FA400A4E3B4 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 7LJJLZ2XH6;
 					};
 					FAB9A7341CDB4FA400A4E3B4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -403,10 +402,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "页面动画的跳转/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = falkjflafjkas;
+				PRODUCT_BUNDLE_IDENTIFIER = .ajfladskjflasdlj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -415,10 +416,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "页面动画的跳转/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = falkjflafjkas;
+				PRODUCT_BUNDLE_IDENTIFIER = .ajfladskjflasdlj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -37,11 +37,6 @@
                                     <constraint firstAttribute="width" constant="158" id="joH-oG-fgh"/>
                                 </constraints>
                                 <state key="normal" title="present"/>
-                                <connections>
-                                    <segue destination="KRj-5z-gdU" kind="popoverPresentation" popoverAnchorView="xQV-nM-s9S" id="3dS-Eo-hyh">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

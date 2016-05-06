@@ -22,19 +22,14 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-//        transitionContext?.presentationStyle()
-        
-        self.navigationController?.delegate = self
-        self.navigationController?.view.backgroundColor = UIColor.whiteColor()
+
+        self.navigationController!.delegate = self
+        self.navigationController!.view.backgroundColor = UIColor.whiteColor()
         
         //添加了手势？
         let popRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(ViewController.handlePopRecognizer(_:)))
         popRecognizer.edges = UIRectEdge.Left
         self.navigationController?.view.addGestureRecognizer(popRecognizer)
-        
     }
     
     /**
@@ -45,15 +40,18 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
         
         var progress = popRecognizer.translationInView(navigationController?.view).x/(navigationController?.view.bounds.size.width)!
         progress = min(1.0, max(0.0, progress))
+        //progress代表的是手势的x方向移动的数值与整个平宽的比例，如果移动超过一半，则退出页面
+        print(progress)
         
         if popRecognizer.state == UIGestureRecognizerState.Began {
-            self.navigationController?.popViewControllerAnimated(true)
+            isTransiting = true //这个重点，添加true时表示可以动画处理
+            self.navigationController!.popViewControllerAnimated(true) //添加可实现动画效果
         } else if popRecognizer.state == UIGestureRecognizerState.Changed {
             updateWithPercent(progress)
             print("change")
         } else if popRecognizer.state == UIGestureRecognizerState.Ended || popRecognizer.state == UIGestureRecognizerState.Cancelled {
             
-            finishBy(progress < 0.5)
+            finishBy(progress < 0.5) //当缩小到0.5的时候直接退出
             print("Ended || Cancelled")
             isTransiting = false
         }
@@ -64,11 +62,13 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
      - parameter percent: pi
      */
     func updateWithPercent(percent: CGFloat) {
-        let scale = CGFloat(fabsf(Float(percent - CGFloat(1.0))))
+        //转化成CGFloat方法CGFloat()，括号了放入值即可 fabsf()是用来转换格式时估算值的
+        let scale = CGFloat(fabsf(Float(percent - CGFloat(1.0)))) //各种转换格式
         transitingView?.transform = CGAffineTransformMakeScale(scale, scale)
         transitionContext?.updateInteractiveTransition(percent)
     }
     
+    //手势结束，退出页面时调用的方法
     func finishBy(cancelled: Bool) {
         if cancelled {
             UIView.animateWithDuration(0.4, animations: { 
@@ -90,14 +90,14 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
         }
     }
     
-    
+    //这个家伙貌似一直没动
     func startInteractiveTransition(transitionContext: UIViewControllerContextTransitioning) {
         self.transitionContext = transitionContext
         
         let containerView = transitionContext.containerView()
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
-        containerView?.insertSubview((toViewController?.view)!, belowSubview: (fromViewController?.view)!)
+        containerView!.insertSubview((toViewController?.view)!, belowSubview: (fromViewController?.view)!)
         self.transitingView = fromViewController?.view
     }
     
@@ -108,6 +108,12 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
         return self
     }
     
+    /**
+     用于判断交互动画的代理方法，如果不返回self，则手势控制动画就没用什么用了
+     - parameter navigationController: 导航控制器
+     - parameter animationController:  动画页面
+     - returns: 返回的是参与交互的控制器，返回空页面不交互
+     */
     func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         if !self.isTransiting {
             return nil
@@ -120,7 +126,10 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
         return 0.5
     }
     
-    // 动画都在这里？
+    /**
+     过度的动画添加方法，里边用于添加矩阵等，用于页面的旋转等各种动画
+     - parameter transitionContext: 代理接收到的上下文，对上下文进行设置创建动画效果
+     */
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
         let containerView = transitionContext.containerView()
@@ -141,9 +150,9 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
             containerView!.insertSubview(toViewController!.view, belowSubview: fromViewController!.view)
             
             destView = fromViewController!.view
-//            destTransform = CGAffineTransformMakeScale(0.1, 1)
-            destTransform = CGAffineTransformMakeRotation(CGFloat(M_PI))
-            destTransform = CGAffineTransformScale(destTransform, 0.1, 1)
+            destTransform = CGAffineTransformMakeScale(0.1, 1)
+//            destTransform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+//            destTransform = CGAffineTransformScale(destTransform, 0.1, 1)
 //            destTransform = CGAffineTransformRotate(destTransform, CGFloat(M_PI))
         }
         
