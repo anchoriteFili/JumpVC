@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAB9A7251CDB4FA400A4E3B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9A7241CDB4FA400A4E3B4 /* AppDelegate.swift */; };
+		FAB9A7271CDB4FA400A4E3B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9A7261CDB4FA400A4E3B4 /* ViewController.swift */; };
+		FAB9A72A1CDB4FA400A4E3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB9A7281CDB4FA400A4E3B4 /* Main.storyboard */; };
+		FAB9A72C1CDB4FA400A4E3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB9A72B1CDB4FA400A4E3B4 /* Assets.xcassets */; };
+		FAB9A72F1CDB4FA400A4E3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB9A72D1CDB4FA400A4E3B4 /* LaunchScreen.storyboard */; };
+		FAB9A73A1CDB4FA400A4E3B4 /* _______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9A7391CDB4FA400A4E3B4 /* _______Tests.swift */; };
+		FAB9A7451CDB4FA400A4E3B4 /* _______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9A7441CDB4FA400A4E3B4 /* _______UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB9A7361CDB4FA400A4E3B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB9A7191CDB4FA400A4E3B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB9A7201CDB4FA400A4E3B4;
+			remoteInfo = "页面动画的跳转";
+		};
+		FAB9A7411CDB4FA400A4E3B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB9A7191CDB4FA400A4E3B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB9A7201CDB4FA400A4E3B4;
+			remoteInfo = "页面动画的跳转";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAB9A7211CDB4FA400A4E3B4 /* 页面动画的跳转.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "页面动画的跳转.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB9A7241CDB4FA400A4E3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB9A7261CDB4FA400A4E3B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAB9A7291CDB4FA400A4E3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB9A72B1CDB4FA400A4E3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAB9A72E1CDB4FA400A4E3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAB9A7301CDB4FA400A4E3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB9A7351CDB4FA400A4E3B4 /* 页面动画的跳转Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "页面动画的跳转Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB9A7391CDB4FA400A4E3B4 /* _______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______Tests.swift"; sourceTree = "<group>"; };
+		FAB9A73B1CDB4FA400A4E3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB9A7401CDB4FA400A4E3B4 /* 页面动画的跳转UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "页面动画的跳转UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB9A7441CDB4FA400A4E3B4 /* _______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______UITests.swift"; sourceTree = "<group>"; };
+		FAB9A7461CDB4FA400A4E3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB9A71E1CDB4FA400A4E3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9A7321CDB4FA400A4E3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9A73D1CDB4FA400A4E3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB9A7181CDB4FA400A4E3B4 = {
+			isa = PBXGroup;
+			children = (
+				FAB9A7231CDB4FA400A4E3B4 /* 页面动画的跳转 */,
+				FAB9A7381CDB4FA400A4E3B4 /* 页面动画的跳转Tests */,
+				FAB9A7431CDB4FA400A4E3B4 /* 页面动画的跳转UITests */,
+				FAB9A7221CDB4FA400A4E3B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB9A7221CDB4FA400A4E3B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9A7211CDB4FA400A4E3B4 /* 页面动画的跳转.app */,
+				FAB9A7351CDB4FA400A4E3B4 /* 页面动画的跳转Tests.xctest */,
+				FAB9A7401CDB4FA400A4E3B4 /* 页面动画的跳转UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB9A7231CDB4FA400A4E3B4 /* 页面动画的跳转 */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9A7241CDB4FA400A4E3B4 /* AppDelegate.swift */,
+				FAB9A7261CDB4FA400A4E3B4 /* ViewController.swift */,
+				FAB9A7281CDB4FA400A4E3B4 /* Main.storyboard */,
+				FAB9A72B1CDB4FA400A4E3B4 /* Assets.xcassets */,
+				FAB9A72D1CDB4FA400A4E3B4 /* LaunchScreen.storyboard */,
+				FAB9A7301CDB4FA400A4E3B4 /* Info.plist */,
+			);
+			path = "页面动画的跳转";
+			sourceTree = "<group>";
+		};
+		FAB9A7381CDB4FA400A4E3B4 /* 页面动画的跳转Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9A7391CDB4FA400A4E3B4 /* _______Tests.swift */,
+				FAB9A73B1CDB4FA400A4E3B4 /* Info.plist */,
+			);
+			path = "页面动画的跳转Tests";
+			sourceTree = "<group>";
+		};
+		FAB9A7431CDB4FA400A4E3B4 /* 页面动画的跳转UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9A7441CDB4FA400A4E3B4 /* _______UITests.swift */,
+				FAB9A7461CDB4FA400A4E3B4 /* Info.plist */,
+			);
+			path = "页面动画的跳转UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB9A7201CDB4FA400A4E3B4 /* 页面动画的跳转 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB9A7491CDB4FA400A4E3B4 /* Build configuration list for PBXNativeTarget "页面动画的跳转" */;
+			buildPhases = (
+				FAB9A71D1CDB4FA400A4E3B4 /* Sources */,
+				FAB9A71E1CDB4FA400A4E3B4 /* Frameworks */,
+				FAB9A71F1CDB4FA400A4E3B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "页面动画的跳转";
+			productName = "页面动画的跳转";
+			productReference = FAB9A7211CDB4FA400A4E3B4 /* 页面动画的跳转.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB9A7341CDB4FA400A4E3B4 /* 页面动画的跳转Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB9A74C1CDB4FA400A4E3B4 /* Build configuration list for PBXNativeTarget "页面动画的跳转Tests" */;
+			buildPhases = (
+				FAB9A7311CDB4FA400A4E3B4 /* Sources */,
+				FAB9A7321CDB4FA400A4E3B4 /* Frameworks */,
+				FAB9A7331CDB4FA400A4E3B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB9A7371CDB4FA400A4E3B4 /* PBXTargetDependency */,
+			);
+			name = "页面动画的跳转Tests";
+			productName = "页面动画的跳转Tests";
+			productReference = FAB9A7351CDB4FA400A4E3B4 /* 页面动画的跳转Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAB9A73F1CDB4FA400A4E3B4 /* 页面动画的跳转UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB9A74F1CDB4FA400A4E3B4 /* Build configuration list for PBXNativeTarget "页面动画的跳转UITests" */;
+			buildPhases = (
+				FAB9A73C1CDB4FA400A4E3B4 /* Sources */,
+				FAB9A73D1CDB4FA400A4E3B4 /* Frameworks */,
+				FAB9A73E1CDB4FA400A4E3B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB9A7421CDB4FA400A4E3B4 /* PBXTargetDependency */,
+			);
+			name = "页面动画的跳转UITests";
+			productName = "页面动画的跳转UITests";
+			productReference = FAB9A7401CDB4FA400A4E3B4 /* 页面动画的跳转UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB9A7191CDB4FA400A4E3B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "赵宏亚";
+				TargetAttributes = {
+					FAB9A7201CDB4FA400A4E3B4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7LJJLZ2XH6;
+					};
+					FAB9A7341CDB4FA400A4E3B4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FAB9A7201CDB4FA400A4E3B4;
+					};
+					FAB9A73F1CDB4FA400A4E3B4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FAB9A7201CDB4FA400A4E3B4;
+					};
+				};
+			};
+			buildConfigurationList = FAB9A71C1CDB4FA400A4E3B4 /* Build configuration list for PBXProject "页面动画的跳转" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB9A7181CDB4FA400A4E3B4;
+			productRefGroup = FAB9A7221CDB4FA400A4E3B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB9A7201CDB4FA400A4E3B4 /* 页面动画的跳转 */,
+				FAB9A7341CDB4FA400A4E3B4 /* 页面动画的跳转Tests */,
+				FAB9A73F1CDB4FA400A4E3B4 /* 页面动画的跳转UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB9A71F1CDB4FA400A4E3B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB9A72F1CDB4FA400A4E3B4 /* LaunchScreen.storyboard in Resources */,
+				FAB9A72C1CDB4FA400A4E3B4 /* Assets.xcassets in Resources */,
+				FAB9A72A1CDB4FA400A4E3B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9A7331CDB4FA400A4E3B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9A73E1CDB4FA400A4E3B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB9A71D1CDB4FA400A4E3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB9A7271CDB4FA400A4E3B4 /* ViewController.swift in Sources */,
+				FAB9A7251CDB4FA400A4E3B4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9A7311CDB4FA400A4E3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB9A73A1CDB4FA400A4E3B4 /* _______Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9A73C1CDB4FA400A4E3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB9A7451CDB4FA400A4E3B4 /* _______UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB9A7371CDB4FA400A4E3B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB9A7201CDB4FA400A4E3B4 /* 页面动画的跳转 */;
+			targetProxy = FAB9A7361CDB4FA400A4E3B4 /* PBXContainerItemProxy */;
+		};
+		FAB9A7421CDB4FA400A4E3B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB9A7201CDB4FA400A4E3B4 /* 页面动画的跳转 */;
+			targetProxy = FAB9A7411CDB4FA400A4E3B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAB9A7281CDB4FA400A4E3B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB9A7291CDB4FA400A4E3B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB9A72D1CDB4FA400A4E3B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB9A72E1CDB4FA400A4E3B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB9A7471CDB4FA400A4E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAB9A7481CDB4FA400A4E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB9A74A1CDB4FA400A4E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "页面动画的跳转/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = .hehehe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAB9A74B1CDB4FA400A4E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "页面动画的跳转/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = .hehehe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAB9A74D1CDB4FA400A4E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "页面动画的跳转Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.-------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/页面动画的跳转.app/页面动画的跳转";
+			};
+			name = Debug;
+		};
+		FAB9A74E1CDB4FA400A4E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "页面动画的跳转Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.-------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/页面动画的跳转.app/页面动画的跳转";
+			};
+			name = Release;
+		};
+		FAB9A7501CDB4FA400A4E3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "页面动画的跳转UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "页面动画的跳转";
+			};
+			name = Debug;
+		};
+		FAB9A7511CDB4FA400A4E3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "页面动画的跳转UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "页面动画的跳转";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB9A71C1CDB4FA400A4E3B4 /* Build configuration list for PBXProject "页面动画的跳转" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB9A7471CDB4FA400A4E3B4 /* Debug */,
+				FAB9A7481CDB4FA400A4E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB9A7491CDB4FA400A4E3B4 /* Build configuration list for PBXNativeTarget "页面动画的跳转" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB9A74A1CDB4FA400A4E3B4 /* Debug */,
+				FAB9A74B1CDB4FA400A4E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB9A74C1CDB4FA400A4E3B4 /* Build configuration list for PBXNativeTarget "页面动画的跳转Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB9A74D1CDB4FA400A4E3B4 /* Debug */,
+				FAB9A74E1CDB4FA400A4E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB9A74F1CDB4FA400A4E3B4 /* Build configuration list for PBXNativeTarget "页面动画的跳转UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB9A7501CDB4FA400A4E3B4 /* Debug */,
+				FAB9A7511CDB4FA400A4E3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB9A7191CDB4FA400A4E3B4 /* Project object */;
+}
