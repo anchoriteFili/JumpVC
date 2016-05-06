@@ -20,20 +20,6 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
     weak var transitingView: UIView?
     var isTransiting: Bool = false
     
-    
-    
-//    enum UIModalPresentationStyle : Int {
-//        case FullScreen
-//        case PageSheet
-//        case FormSheet
-//        case CurrentContext
-//        case Custom
-//        case OverFullScreen
-//        case OverCurrentContext
-//        case Popover
-//        case None
-//    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -131,7 +117,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
     
     //UIViewControllerTransitioningDelegate 设置过渡时间
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.1
+        return 0.5
     }
     
     // 动画都在这里？
@@ -141,26 +127,24 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIViewCont
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
         var destView: UIView!
-        
-//        struct CGAffineTransform { var a: CGFloat var b: CGFloat var c: CGFloat var d: CGFloat var tx: CGFloat var ty: CGFloat init() init(a a: CGFloat, b b: CGFloat, c c: CGFloat, d d: CGFloat, tx tx: CGFloat, ty ty: CGFloat) }
         var destTransform: CGAffineTransform! //。。。矩阵
         
         //推得时候的动画推送效果
         if navigationOperation == UINavigationControllerOperation.Push {
             containerView?.insertSubview(toViewController!.view, aboveSubview: fromViewController!.view)
             destView = toViewController!.view
-            destView.transform = CGAffineTransformMakeScale(0.1, 0.1)
+            destView.transform = CGAffineTransformMakeScale(1, 0.1)
             destTransform = CGAffineTransformMakeScale(1, 1)
-            
-            
-            
             
         } else if navigationOperation == UINavigationControllerOperation.Pop {
             
             containerView!.insertSubview(toViewController!.view, belowSubview: fromViewController!.view)
             
             destView = fromViewController!.view
-            destTransform = CGAffineTransformMakeScale(0.1, 0.1)
+//            destTransform = CGAffineTransformMakeScale(0.1, 1)
+            destTransform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+            destTransform = CGAffineTransformScale(destTransform, 0.1, 1)
+//            destTransform = CGAffineTransformRotate(destTransform, CGFloat(M_PI))
         }
         
         
